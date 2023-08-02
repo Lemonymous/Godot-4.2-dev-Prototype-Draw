@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx0ehujw4ixho"]
+
+[ext_resource type="Script" path="res://brush.gd" id="1_vptk2"]
+
+[node name="brush" type="Node"]
+script = ExtResource("1_vptk2")

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dfmgwtpmsx6mk"
+path="res://.godot/imported/circle_brush.glsl-b6b32d95f018d0326d916a31e74a0686.res"
+
+[deps]
+
+source_file="res://circle_brush.glsl"
+dest_files=["res://.godot/imported/circle_brush.glsl-b6b32d95f018d0326d916a31e74a0686.res"]
+
+[params]
+
