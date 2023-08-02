@@ -2,14 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://dx0ehujw4ixho" path="res://brush.tscn" id="1_btm06"]
 [ext_resource type="PackedScene" uid="uid://bt4qpmejdqebg" path="res://canvas.tscn" id="1_g6wed"]
-[ext_resource type="PackedScene" uid="uid://dd40bher88syl" path="res://cursor.tscn" id="1_rhsbm"]
+[ext_resource type="Script" path="res://camera.gd" id="1_pcs07"]
 [ext_resource type="Theme" uid="uid://c04vbvgmjghp" path="res://main_theme.tres" id="2_2pc4h"]
 [ext_resource type="Script" path="res://button_color.gd" id="3_xokl2"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvpu2"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ldm2"]
 bg_color = Color(0.8, 0.8, 0.8, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojtfn"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d1bru"]
 bg_color = Color(1, 1, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -21,7 +21,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pcsw1"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56m3m"]
 bg_color = Color(1, 1, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -33,12 +33,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_38ujr"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rwj7c"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hj6o"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0olup"]
 bg_color = Color(0, 0, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hsp0x"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yh7tt"]
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -50,7 +50,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n8n13"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ib3x0"]
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -62,12 +62,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v4ols"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oqafv"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h83rt"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yldbh"]
 bg_color = Color(0.8, 0, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_43quk"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdjpk"]
 bg_color = Color(1, 0, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -79,7 +79,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gldnv"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ihdt8"]
 bg_color = Color(1, 0, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -91,12 +91,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lee76"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_crjlx"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hxf4"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uxc5x"]
 bg_color = Color(0, 0.8, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8pk7a"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8c8mm"]
 bg_color = Color(0, 1, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -108,7 +108,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6v78"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u0848"]
 bg_color = Color(0, 1, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -120,12 +120,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_scn4b"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgehp"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kmgh"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ujjdu"]
 bg_color = Color(0, 0, 0.8, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uxb76"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_430p6"]
 bg_color = Color(0, 0, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -137,7 +137,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1ww"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wb5ei"]
 bg_color = Color(0, 0, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -149,12 +149,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8avnw"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5di5j"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_twhin"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mibd"]
 bg_color = Color(0.8, 0, 0.8, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oad6f"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_66cit"]
 bg_color = Color(1, 0, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -166,7 +166,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qsjc"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ss1dh"]
 bg_color = Color(1, 0, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -178,12 +178,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhrse"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ibw05"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5m8g"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebtvc"]
 bg_color = Color(0.8, 0.8, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ue111"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eytu5"]
 bg_color = Color(1, 1, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -195,7 +195,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwiry"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nxnaq"]
 bg_color = Color(1, 1, 0, 1)
 border_width_left = 2
 border_width_top = 2
@@ -207,12 +207,12 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_plgd0"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h36en"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0lwgu"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44te2"]
 bg_color = Color(0, 0.8, 0.8, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ciomb"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0ej7"]
 bg_color = Color(0, 1, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -224,7 +224,7 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hs2yp"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_43inn"]
 bg_color = Color(0, 1, 1, 1)
 border_width_left = 2
 border_width_top = 2
@@ -236,18 +236,18 @@ expand_margin_top = 4.0
 expand_margin_right = 4.0
 expand_margin_bottom = 4.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxwq7"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8grvd"]
 
 [node name="main" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [-2004.0]
+
+[node name="camera" type="Camera2D" parent="."]
+position = Vector2(160, 90)
+script = ExtResource("1_pcs07")
 
 [node name="brush" parent="." instance=ExtResource("1_btm06")]
-brush_size_increment = 6
 
-[node name="cursor" parent="." instance=ExtResource("1_rhsbm")]
-
-[node name="Canvas" parent="." instance=ExtResource("1_g6wed")]
-centered = false
-texture_size = Vector2i(1152, 648)
+[node name="canvas" parent="." instance=ExtResource("1_g6wed")]
 
 [node name="ui" type="CanvasLayer" parent="."]
 
@@ -258,6 +258,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="ColorRect" type="ColorRect" parent="ui/Control"]
 custom_minimum_size = Vector2(20, 0)
@@ -281,7 +282,6 @@ offset_left = -12.5
 offset_right = 12.5
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 0
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
@@ -296,22 +296,22 @@ theme_override_constants/v_separation = 0
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_pvpu2")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ojtfn")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_pcsw1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_38ujr")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_38ujr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ldm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d1bru")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_56m3m")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rwj7c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rwj7c")
 script = ExtResource("3_xokl2")
 
 [node name="Button2" type="Button" parent="ui/Control/ColorRect/MarginContainer/ButtonFlowContainer"]
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_4hj6o")
-theme_override_styles/hover = SubResource("StyleBoxFlat_hsp0x")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_n8n13")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_v4ols")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_v4ols")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0olup")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yh7tt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ib3x0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_oqafv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_oqafv")
 script = ExtResource("3_xokl2")
 color = Color(0, 0, 0, 1)
 
@@ -319,11 +319,11 @@ color = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_h83rt")
-theme_override_styles/hover = SubResource("StyleBoxFlat_43quk")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_gldnv")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_lee76")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_lee76")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yldbh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rdjpk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ihdt8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_crjlx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_crjlx")
 script = ExtResource("3_xokl2")
 color = Color(1, 0, 0, 1)
 
@@ -331,11 +331,11 @@ color = Color(1, 0, 0, 1)
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_5hxf4")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8pk7a")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_i6v78")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_scn4b")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_scn4b")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uxc5x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8c8mm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u0848")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qgehp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qgehp")
 script = ExtResource("3_xokl2")
 color = Color(0, 1, 0, 1)
 
@@ -343,11 +343,11 @@ color = Color(0, 1, 0, 1)
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_7kmgh")
-theme_override_styles/hover = SubResource("StyleBoxFlat_uxb76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_7y1ww")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_8avnw")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_8avnw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ujjdu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_430p6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wb5ei")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5di5j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5di5j")
 script = ExtResource("3_xokl2")
 color = Color(0, 0, 1, 1)
 
@@ -355,11 +355,11 @@ color = Color(0, 0, 1, 1)
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_twhin")
-theme_override_styles/hover = SubResource("StyleBoxFlat_oad6f")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_2qsjc")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_bhrse")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_bhrse")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mibd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_66cit")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ss1dh")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ibw05")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ibw05")
 script = ExtResource("3_xokl2")
 color = Color(1, 0, 1, 1)
 
@@ -367,11 +367,11 @@ color = Color(1, 0, 1, 1)
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_l5m8g")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ue111")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cwiry")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_plgd0")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_plgd0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ebtvc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eytu5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nxnaq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h36en")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h36en")
 script = ExtResource("3_xokl2")
 color = Color(1, 1, 0, 1)
 
@@ -379,10 +379,12 @@ color = Color(1, 1, 0, 1)
 custom_minimum_size = Vector2(15, 15)
 layout_mode = 2
 theme = ExtResource("2_2pc4h")
-theme_override_styles/normal = SubResource("StyleBoxFlat_0lwgu")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ciomb")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_hs2yp")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_vxwq7")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_vxwq7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_44te2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f0ej7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_43inn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8grvd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8grvd")
 script = ExtResource("3_xokl2")
 color = Color(0, 1, 1, 1)
+
+[editable path="canvas"]

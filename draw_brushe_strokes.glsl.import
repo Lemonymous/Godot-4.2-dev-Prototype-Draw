@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://cybpbv8vdil41"
+path="res://.godot/imported/draw_brushe_strokes.glsl-473d08fa3ed4bfcd87ec0ab2b091639d.res"
+
+[deps]
+
+source_file="res://draw_brushe_strokes.glsl"
+dest_files=["res://.godot/imported/draw_brushe_strokes.glsl-473d08fa3ed4bfcd87ec0ab2b091639d.res"]
+
+[params]
+

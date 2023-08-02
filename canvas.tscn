@@ -2,5 +2,10 @@
 
 [ext_resource type="Script" path="res://canvas.gd" id="1_irshd"]
 
-[node name="Canvas" type="Sprite2D"]
+[node name="canvas" type="Node2D"]
 script = ExtResource("1_irshd")
+
+[node name="reference_rect" type="ReferenceRect" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+mouse_filter = 2
