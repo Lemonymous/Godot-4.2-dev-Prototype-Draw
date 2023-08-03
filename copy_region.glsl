@@ -13,7 +13,7 @@ layout(r32f, set = 1, binding = 0) uniform restrict writeonly image2D output_ima
 // Our push PushConstant
 layout(push_constant, std430) uniform Params {
 	// chunk #1
-    vec2 texture_size;		// 8 bytes (2 floats)
+	vec2 texture_size;		// 8 bytes (2 floats)
 	vec2 region_top_left;	// 8 bytes (2 floats)
 } params;
 
