@@ -5,6 +5,12 @@ extends RefCounted
 var rd : RenderingDevice
 var shader : RID
 var pipeline : RID
+var push_constant
+var descriptor_sets : Array[RID]
+	#set(i, value):
+		#descriptor_sets[i] = value
+	#get(i):
+		#return descriptor_sets[i]
 
 
 func _init(shader_file_path: String, rendering_device: RenderingDevice = RenderingServer.get_rendering_device()):
