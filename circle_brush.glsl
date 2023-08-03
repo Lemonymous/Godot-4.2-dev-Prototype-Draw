@@ -21,7 +21,7 @@ void main() {
 
 	// Calculate the center of the texture
 	vec2 circle_center = params.texture_size * 0.5 - 0.5;
-	float circle_radius = params.texture_size.x * 0.5 - 1.0;
+	float circle_radius = circle_center.x;
 
 	// Calculate distance from the center of the circle
 	vec2 delta = uv - circle_center;

@@ -209,7 +209,7 @@ func _brush_draw(from: Vector2, to: Vector2):
 	# Loop through the steps and populate the brush positions
 	var point = from
 	for i in range(num_steps):
-		brush_positions.append(point)
+		brush_positions.append(Vector2i(point))
 		point += step_vector
 	
 	# Clean up previous brush uniform set

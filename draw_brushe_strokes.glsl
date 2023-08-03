@@ -45,7 +45,7 @@ void main() {
 
 		float brush_alpha = imageLoad(brush_image, ivec2(brush_uv)).r;
 
-		result = vec4(mix(result.rgb, params.brush_color.rgb, brush_alpha), result.a);
+		result = vec4(mix(params.brush_color.rgb, result.rgb, 1.0 - brush_alpha), result.a);
 	}
 
 	imageStore(output_image, ivec2(uv), result);
