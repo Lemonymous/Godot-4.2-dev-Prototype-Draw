@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://rp15ekg40neh"
+path="res://.godot/imported/circle_brush_contour.glsl-760153d322226a550e70c397edf9b3d0.res"
+
+[deps]
+
+source_file="res://circle_brush_contour.glsl"
+dest_files=["res://.godot/imported/circle_brush_contour.glsl-760153d322226a550e70c397edf9b3d0.res"]
+
+[params]
+

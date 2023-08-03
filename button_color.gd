@@ -47,9 +47,13 @@ func _update_stylebox_override():
 	stylebox_pressed.expand_margin_right = 4
 	stylebox_pressed.expand_margin_top = 4
 	
+	var stylebox_focus = StyleBoxFlat.new()
+	stylebox_focus.bg_color = color
+	stylebox_focus.expand_margin_left = 2
+	
 	begin_bulk_theme_override()
 	add_theme_stylebox_override("disabled", stylebox_empty)
-	add_theme_stylebox_override("focus", stylebox_empty)
+	add_theme_stylebox_override("focus", stylebox_focus)
 	add_theme_stylebox_override("hover", stylebox_hover)
 	add_theme_stylebox_override("normal", stylebox_normal)
 	add_theme_stylebox_override("pressed", stylebox_pressed)

@@ -25,7 +25,6 @@ var is_drawing := false
 
 var area : Area2D
 var collision : CollisionShape2D
-var cursor : Sprite2D
 var sprite : Sprite2D
 
 # Compute shader necessities
@@ -64,6 +63,8 @@ func _init():
 
 
 func _ready():
+	mouse_position = get_local_mouse_position()
+	prev_mouse_position = mouse_position
 	_init_children()
 	_init_shaders_and_pipelines()
 	_update_brush()
@@ -108,13 +109,11 @@ func _init_children():
 	# Create nodes
 	canvas_size = $reference_rect.size
 	area = DetectionArea.new(canvas_size)
-	cursor = PaintBrush.new()
 	sprite = Canvas.new()
 	
 	# Add nodes
 	add_child(sprite)
 	add_child(area)
-	add_child(cursor)
 	
 	# Connect to events
 	area.input_event.connect(_on_area_input_event)
@@ -339,7 +338,7 @@ func _on_color_changed(color: Color):
 	brush_color = color
 
 
-func _on_brush_changed(new_brush_rd: RID, new_brush_size: Vector2i):
+func _on_brush_changed(new_brush_rd: RID, new_brush_contour_rd: RID, new_brush_size: Vector2i):
 	brush_rd = new_brush_rd
 	brush_size = new_brush_size
 	_update_brush()
