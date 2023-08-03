@@ -20,9 +20,7 @@ void main() {
 	vec2 uv = gl_GlobalInvocationID.xy;
 
 	// Calculate the center of the texture
-	vec2 circle_center = params.texture_size * 0.5;
-
-	// Calculate the circle radius (half the texture width minus 1 for the border)
+	vec2 circle_center = params.texture_size * 0.5 - 0.5;
 	float circle_radius = params.texture_size.x * 0.5 - 1.0;
 
 	// Calculate distance from the center of the circle
@@ -36,7 +34,7 @@ void main() {
 		float border_distance = circle_radius - sqrt(distance_squared);
 		float border_distance_adjusted = border_distance - params.fade_start_radius;
 		float border_distance_normalized = border_distance_adjusted / circle_radius;
-		alpha = smoothstep(0.0, params.border_fade, border_distance_normalized);
+		alpha = 1.0 - smoothstep(params.border_fade, 0.0, border_distance_normalized);
 	}
 
 	// Set the pixel color with the calculated alpha value
